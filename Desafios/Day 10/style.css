@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    color: #009ece;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4rem;
+}
+
+span::before {
+    content: '';
+    animation: toggle-emoji 9s linear infinite;
+}
+
+@keyframes toggle-emoji {
+    0% { content: '🎧'; }
+    
+    12.5% { content: '📚'; }
+
+    25% { content: '💻'; }
+    
+    37.5% { content: '🎨'; }
+    
+    50% { content: '🎮'; }
+
+    62.5% { content: '🤘🏼'; }
+    
+    75% { content: '🍣'; }
+    
+    87.5% { content: '🛸'; }
+    
+    100% { content: '🎧'; }
+}

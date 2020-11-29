@@ -1,0 +1,62 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    
+    color: #ff00d4;
+    background: transparent;
+    font-family: 'Ralaway', sans-serif;
+    font-size: 2.4rem;
+
+    border: 4px solid;
+    border-radius: 8px;
+
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    transition-duration: .5s;
+}
+
+.btn::after {
+    content: '';
+    width: 100%;
+    height: 0;
+    background: #ff00d4;
+
+    border-radius: 0 0 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Para que o texto fique por cima */
+    transition-duration: .5s;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+.btn:hover::after {
+    height: 100px; /* Para ficar maior que o btn e completar o efeito */
+}
