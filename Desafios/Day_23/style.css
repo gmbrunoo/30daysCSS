@@ -1,0 +1,30 @@
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+}
+
+a{
+  text-decoration: none;
+  color:#fff;
+  font-family: sans-serif;
+  font-size: 40px;
+  border: 3px solid white;
+  padding: 30px 70px;
+  transition: all .3s;
+}
+
+a:hover{
+  border: 3px solid rgb(0, 204, 255);;
+  color: rgb(0, 204, 255);
+  animation: shake .3s linear 2.5;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
